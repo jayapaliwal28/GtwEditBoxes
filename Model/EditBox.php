@@ -8,22 +8,22 @@
 class EditBox extends AppModel {
     
     public $validate = array(
-        'title' => array(
+        'name' => array(
             'required' => array(
                 'rule' => array('notEmpty'),
-                'message' => 'A title is required'
+                'message' => 'A name is required'
             ),
             'unique' => array(
                 'rule' => 'isUnique',
                 'required' => 'create',
-                'message' => 'Title already exists'
+                'message' => 'Name is already used'
             )
         )
     );
     
     public function beforeSave($options = array()){
-        if (isset($this->data[$this->alias]['title'])) {
-            $this->data[$this->alias]['title'] = Inflector::slug(strtolower ( $this->data[$this->alias]['title']) );
+        if (isset($this->data[$this->alias]['name'])) {
+            $this->data[$this->alias]['name'] = Inflector::slug(strtolower ( $this->data[$this->alias]['name']) );
         }
         return true;
     }

@@ -19,7 +19,7 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Title</th>
+            <th>Name</th>
             <th>Created</th>
             <th>Actions</th>
         </tr>
@@ -30,7 +30,7 @@
         <tr>
             <td><?php echo $editBox['EditBox']['id']; ?></td>
             <td>
-                <a class="editbox-edit" href="#" data-editbox="<?php echo $editBox['EditBox']['id']; ?>"><?php echo $editBox['EditBox']['title'] ?></a>
+                <a class="editbox-edit" href="#" data-editbox="<?php echo $editBox['EditBox']['id']; ?>"><?php echo $editBox['EditBox']['name'] ?></a>
             </td>
             <td>
                 <?php echo $editBox['EditBox']['created']; ?>

@@ -18,9 +18,9 @@ echo $this->Form->create('EditBox', array(
 
 <fieldset>
     <?php
-    echo $this->Form->input('title', array(
-        'label' => 'Title',
-        'placeholder' => 'EditBox title'
+    echo $this->Form->input('name', array(
+        'label' => 'Name',
+        'placeholder' => 'EditBox name'
     ));
     
     echo $this->Form->input('body', array(
