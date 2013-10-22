@@ -7,8 +7,6 @@
 
 class EditBox extends AppModel {
     
-    //public $useTable = 'edit_boxes'; 
-     
     public $validate = array(
         'title' => array(
             'required' => array(
@@ -29,8 +27,5 @@ class EditBox extends AppModel {
         }
         return true;
     }
-
-
-
 
 }

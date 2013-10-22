@@ -62,7 +62,6 @@
     }
     
     public function delete($id) {
-
         if ($this->EditBox->delete($id)) {
             $this->Session->setFlash(__('The EditBox has been deleted.'), 'alert', array(
                 'plugin' => 'BoostCake',
@@ -71,4 +70,5 @@
             return $this->redirect(array('action' => 'index'));
         }
     }
+    
 }
