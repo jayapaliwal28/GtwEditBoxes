@@ -17,7 +17,7 @@ $textbox = $this->requestAction(array(
 ));
 ?>
 
-<div class="row editbox" data-editbox="<?php echo $name; ?>">
+<div class="editbox" data-editbox="<?php echo $name; ?>">
     
     <div class="closed panel panel-default">
         <div class="panel-body">
