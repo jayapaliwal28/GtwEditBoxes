@@ -7,7 +7,6 @@
 require(['jquery', 'basepath', 'editbox/autosize'], function($, basepath){
     
     $('.editbox .closed').css('cursor', 'pointer');
-    $('.editbox').find('textarea').focus().autosize({append: "\n"});
     
     $('.editbox .closed').click(function() {
         open($(this).closest('.editbox'));
@@ -15,7 +14,7 @@ require(['jquery', 'basepath', 'editbox/autosize'], function($, basepath){
     
     $('.editbox .btn-default').click(function() {
         close($(this).closest('.editbox'));
-    })
+    });
     
     function close(editbox){
         editbox.find('.opened').hide();
@@ -23,7 +22,7 @@ require(['jquery', 'basepath', 'editbox/autosize'], function($, basepath){
     }
     
     function open(editbox){
-        editbox.find('.opened').show().focus();
+        editbox.find('.opened').show().find('textarea').autosize({append: "\n"}).focus();
         editbox.find('.closed').hide();
     }
     
@@ -50,6 +49,6 @@ require(['jquery', 'basepath', 'editbox/autosize'], function($, basepath){
         })
         editbox.find('span').text(editbox.find('textarea').val());
         close(editbox);
-    })
+    });
     
 });
