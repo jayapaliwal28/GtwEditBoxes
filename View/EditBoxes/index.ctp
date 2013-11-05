@@ -6,8 +6,8 @@
  */
 
  $this->Helpers->load('GtwRequire.GtwRequire');
- $this->GtwRequire->req("ui/app/datatables");
- $this->GtwRequire->req("editbox/app/editbox");
+ $this->GtwRequire->req("ui/datatables");
+ $this->GtwRequire->req("editbox/editbox");
 ?>
 
 <h1>EditBoxes</h1>
