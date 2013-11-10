@@ -19,7 +19,7 @@ $textbox = $this->requestAction(array(
 
     <div class="closed panel panel-default">
         <div class="panel-body">
-            <i class="icon-edit"></i>
+            <i class="icon-pencil"></i>
             <span><?php echo $textbox; ?></span>
         </div>
     </div>
