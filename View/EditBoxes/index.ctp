@@ -21,7 +21,7 @@
             <th>Id</th>
             <th>Name</th>
             <th>Created</th>
-            <th>Actions</th>
+            <th style="display:none"></th>
         </tr>
     </thead>
 
@@ -36,10 +36,10 @@
                 <?php echo $editBox['EditBox']['created']; ?>
             </td>
             <td>
-            <?php
-                echo $this->Html->actionIcon('icon-edit', 'edit', $editBox['EditBox']['id']);
-                echo $this->Html->actionIcon('icon-remove', 'delete', $editBox['EditBox']['id']);
-            ?>
+            <span class="pull-right"><?php
+                    echo $this->Html->actionIcon('icon-edit', 'edit', $editBox['EditBox']['id']);
+                    echo $this->Html->actionIcon('icon-remove', 'delete', $editBox['EditBox']['id']);
+                ?></span>
             </td>
         </tr>
         <?php endforeach; ?>
