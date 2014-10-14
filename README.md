@@ -1,7 +1,5 @@
 # EditBoxes plugin for CakePHP
 
-This plugin is under development and should probably not be used.
-
 This plugin provides an easy way to update static pages content in elaborate layouts. Once the layout is laid down, replace text sections by EditBoxes to allow admins to edit them inline.
 
 ## Requirements
