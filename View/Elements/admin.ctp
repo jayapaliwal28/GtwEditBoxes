@@ -17,13 +17,9 @@ $textbox = $this->requestAction(array(
 ?>
 <div class="editbox" data-editbox="<?php echo $name; ?>">
 
-    <div class="closed panel panel-default">
-        <div class="panel-body">
-            <i class="icon-pencil"></i>
-            <span><?php echo $textbox; ?></span>
-        </div>
+    <div class="closed">
+        <span><?php echo $textbox; ?></span>
     </div>
-    
     
     <div class="opened" style="display:none">
         <div class="form-group">

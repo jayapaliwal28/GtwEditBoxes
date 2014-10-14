@@ -31,17 +31,11 @@ Include editbox.less in your theme.less file
 ## How to use
 
 1. Create EditBoxes in the database by pointing your browser to `/gtw_edit_boxes/edit_boxes/`. Titles needs to be unique, lowecase_underscored.
-2. Show EditBoxes in your views with `<?php echo $this->element('GtwEditBoxes.view', array("name" => "example_box")); ?>`.
-3. Give admin control by using `<?php echo $this->element('GtwEditBoxes.admin', array("name" => "example_box")); ?>`. You will need to load 
+2. Show EditBoxes in your views with `<?php echo $this->element('GtwEditBoxes.view', array("name" => "example_box"), array('cache'=>true)); ?>`.
+3. Give admin control by using `<?php echo $this->element('GtwEditBoxes.admin', array("name" => "example_box"), array('cache'=>true)); ?>`. You will need to load 
 
 Make sure you setup your permissions correctly so that the admins can use the "save" function.
 
-## Performance considerations
-    
-This plugin creates a symlink to your webroot directory to make it easier on CakePHP's router. However, the symlink only needs to be created once. Therefore you can remove the folder check from every page load by changing your call to `CakePlugin::load('GtwEditBoxes');` in bootstrap.php
-
-Every EditBox uses the requestAction() method. This method initiates a whole dispatch cycle everytime it's called. Therefore you shoud consider caching the elements.
-    
 ## Copyright and license
 Author: Philippe Lafrance  
 Copyright 2013 [Gintonic Web](http://gintonicweb.com)  
