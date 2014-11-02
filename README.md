@@ -30,7 +30,7 @@ Include editbox.less in your theme.less file
 
 1. Create EditBoxes in the database by pointing your browser to `/gtw_edit_boxes/edit_boxes/`. Titles needs to be unique, lowecase_underscored.
 2. Show EditBoxes in your views with `<?php echo $this->element('GtwEditBoxes.view', array("name" => "example_box"), array('cache'=>true)); ?>`.
-3. Give admin control by using `<?php echo $this->element('GtwEditBoxes.admin', array("name" => "example_box"), array('cache'=>true)); ?>`. You will need to load 
+3. Give admin control by using `<?php echo $this->element('GtwEditBoxes.admin', array("name" => "example_box"), array('cache'=>true, 'key'=>'example_box')); ?>`. 
 
 Make sure you setup your permissions correctly so that the admins can use the "save" function.
 
