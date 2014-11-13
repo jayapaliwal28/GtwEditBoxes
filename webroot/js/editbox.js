@@ -47,7 +47,7 @@ require(['jquery', 'basepath', 'editbox/autosize'], function($, basepath){
                 alert('Failed to connect to the server, try reloading the page');
             }
         })
-        editbox.find('span').text(editbox.find('textarea').val());
+        editbox.find('div.closed').html(editbox.find('textarea').val());
         close(editbox);
     });
     
