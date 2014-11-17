@@ -5,6 +5,8 @@
 
 */
 require(['jquery', 'basepath', 'editbox/autosize'], function($, basepath){
+	
+	
     
     $('.editbox .closed').css('cursor', 'pointer');
     
@@ -12,7 +14,7 @@ require(['jquery', 'basepath', 'editbox/autosize'], function($, basepath){
         open($(this).closest('.editbox'));
     });
     
-    $('.editbox .btn-default').click(function() {
+    $('.editbox button.close_box').click(function() {
         close($(this).closest('.editbox'));
     });
     

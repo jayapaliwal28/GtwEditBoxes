@@ -1,7 +1,13 @@
-define(['require','ui/bootstrap-wysihtml', 'jquery'],function(require, test, $){
-    
-    $('.editbox-html').wysihtml5({
-        "stylesheets": false
-    });
-    
+define(['require', 'jquery', 'ui/bootstrap-wysihtml'],function(require, $, test){
+	$('.editbox-html').one('focus', function(){
+		$(this).wysihtml5({
+	        "stylesheets": false ,
+	        "events": {
+	            "load": function() { 
+	                console.log("Loaded!");
+	            }
+	        }
+	    });
+	});
+	
 });

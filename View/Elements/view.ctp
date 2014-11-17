@@ -36,7 +36,7 @@ if(CakeSession::read('Auth.User.role') == 'admin'){
         </div>
         <div class="form-group pull-right">
             <button class="btn btn-primary">Save</button>
-            <button class="btn btn-default">Cancel</button>
+            <button class="btn btn-default close_box">Cancel</button>
         </div>
     </div>
     <div class="clearfix"></div>
