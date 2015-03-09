@@ -7,7 +7,9 @@
 
 class EditBox extends AppModel {
     
-    public $validate = array(
+    var $validationDomain = 'gtw_edit_boxes';
+    
+	public $validate = array(
         'name' => array(
             'required' => array(
                 'rule' => array('notEmpty'),

@@ -35,8 +35,8 @@ if(CakeSession::read('Auth.User.role') == 'admin'){
             <textarea class="form-control <?php echo $edit_class; ?>"><?php echo $textbox; ?></textarea>
         </div>
         <div class="form-group pull-right">
-            <button class="btn btn-primary">Save</button>
-            <button class="btn btn-default close_box">Cancel</button>
+            <button class="btn btn-primary"><?php echo __d('gtw_edit_boxes','Save');?></button>
+            <button class="btn btn-default close_box"><?php echo __d('gtw_edit_boxes', 'Cancel'); ?></button>
         </div>
     </div>
     <div class="clearfix"></div>

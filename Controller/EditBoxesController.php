@@ -26,13 +26,13 @@
         if ($this->request->is('post')) {
             $this->EditBox->create();
             if ($this->EditBox->save($this->request->data)) {
-                $this->Session->setFlash(__('Your content has been saved.'), 'alert', array(
+                $this->Session->setFlash( __d('gtw_edit_boxes','Your content has been saved.'), 'alert', array(
                     'plugin' => 'BoostCake',
                     'class' => 'alert-success'
                 ));
                 return $this->redirect(array('action' => 'index'));
             }
-            $this->Session->setFlash(__('Unable to add your content.'), 'alert', array(
+            $this->Session->setFlash(__d('gtw_edit_boxes','Unable to add your content.'), 'alert', array(
                 'plugin' => 'BoostCake',
                 'class' => 'alert-danger'
             ));
@@ -63,7 +63,7 @@
     
     public function delete($id) {
         if ($this->EditBox->delete($id)) {
-            $this->Session->setFlash(__('The EditBox has been deleted.'), 'alert', array(
+            $this->Session->setFlash(__d('gtw_edit_boxes','The EditBox has been deleted.'), 'alert', array(
                 'plugin' => 'BoostCake',
                 'class' => 'alert-success'
             ));

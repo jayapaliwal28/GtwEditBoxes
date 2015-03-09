@@ -5,7 +5,7 @@
  * @link      http://gintonicweb.com
  */
 ?>
-<h1>Add EditBox</h1> <hr/>
+<h1><?php echo __d('gtw_edit_boxes',' Add EditBox'); ?></h1> <hr/>
 <?php
 echo $this->Form->create('EditBox', array(
     'inputDefaults' => array(
@@ -19,24 +19,24 @@ echo $this->Form->create('EditBox', array(
 <fieldset>
     <?php
     echo $this->Form->input('name', array(
-        'label' => 'Name',
-        'placeholder' => 'EditBox name'
+        'label' => __d('gtw_edit_boxes','Name'),
+        'placeholder' => __d('gtw_edit_boxes','EditBox name')
     ));
     
     echo $this->Form->input('body', array(
-        'label' => 'Body',
+        'label' => __d('gtw_edit_boxes','Body'),
         'rows' => '3',
-        'placeholder' => 'EditBox body'
+        'placeholder' => __d('gtw_edit_boxes','EditBox body')
     ));
     ?>
     
     <div class="row">
         <div class="col col-md-12">
-            <?php echo $this->Form->submit('Save EditBox', array(
+            <?php echo $this->Form->submit(__d('gtw_edit_boxes','Save EditBox') , array(
                 'div' => false,
                 'class' => 'btn btn-primary'
             ));?>
-            <?php echo $this->Html->actionBtn('Cancel', 'index'); ?>
+            <?php echo $this->Html->actionBtn(__d('gtw_edit_boxes','Cancel') , 'index'); ?>
         </div>
     </div>
     

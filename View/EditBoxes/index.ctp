@@ -18,9 +18,9 @@
     
     <thead>
         <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Created</th>
+            <th><?php echo __d('gtw_edit_boxes','Id'); ?></th>
+            <th><?php echo __d('gtw_edit_boxes','Name'); ?></th>
+            <th><?php echo __d('gtw_edit_boxes','Created'); ?></th>
             <th style="display:none"></th>
         </tr>
     </thead>
